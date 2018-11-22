@@ -3,8 +3,7 @@
 		<meta charset="utf-8" />
 		<title>내게 딱 맞는 학원 알고리즘</title>
 		<style type="text/css">
-
-
+/**  고정푸터  **/
 		.footer{
     position: fixed;
     right:0;
@@ -15,14 +14,16 @@
     background : none;
     }
 
+
+/** 상담하기 버튼 디자인 **/
 			.kakao{
 				text-decoration: none;
 				font-size:3rem;
 				color:white;
-				background-color: #eb6100;
-				border-bottom: 5px solid #9b4000;
-				border-right: 4px solid #9b4000;
-				padding:10px 10px 10px 10px;
+				background-color: #3b1e1e;
+				border-bottom: 5px solid #000000;
+				border-right: 4px solid #000000;
+				padding:20px 10px 20px 10px;
 				display:block;
 				border-radius: 10px;
 				text-shadow: 0px -2px black;
@@ -33,12 +34,28 @@
 				transition:all 0.1s;
 			}
 			body{
-				background: linear-gradient(black,white)
+				background: linear-gradient(black,#4a575f,#1da158)
 			}
+
+			.button{
+				text-decoration: none;
+				font-size:2rem;
+				color:white;
+				background-color: #004820;
+				border-bottom: 5px solid #000000;
+				border-right: 4px solid #000000;
+				padding:20px 10px 20px 10px;
+				display:inline-block;
+				border-radius: 10px;
+				text-shadow: 0px -2px black;
+				margin-top: 20;
+			}
+
 		</style>
 
 	</head>
 	<body>
+		<!-- 이미지 -->
 		<img src="image1.jpg" alt="" width='100%'>
 		<img src="image2.jpg" alt="" width='100%'>
 		<img src="image3.jpg" alt="" width='100%'>
@@ -49,12 +66,16 @@
 
 		</div>
 
-
-
+<center>
+			<a class="button" href="https://pf.kakao.com/_VHKLu/chat"> 상담하기 </a>
+</center>
+<br><br><br><br><br><br><br>
+<!-- 푸터-->
 		<div class="footer">
 			<center>
+
 				<a class="kakao" href="https://pf.kakao.com/_VHKLu/chat">
-					상담받아보기
+				<img src="kakao.png" alt="" width='50px'>	카톡문의하기
 				</a>
 			</center>
 		</div>
