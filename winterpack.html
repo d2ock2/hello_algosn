@@ -42,13 +42,36 @@
         border-radius: 50px;
       	text-align: center;
         color: white;
-        font-size:2rem;
+        font-size:4rem;
       	position: absolute;
       	top: 89%;
       	left: 50%;
       	transform: translate( -50%, -50% );
 			}
 		</style>
+
+		<!-- Facebook Pixel Code -->
+		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '457504224771726');
+		  fbq('track', 'PageView');
+			function onClick(){ fbq('track','click'); };
+		</script>
+
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=457504224771726&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+
+
+
 	</head>
 	<body>
     <img src="1.png" alt="" width='100%'>
@@ -61,7 +84,7 @@
     <div class="wrap">
 			<div class="image">
     <img src="6.png" alt=""width='100%'>  </div>
-    <a href="https://pf.kakao.com/_VHKLu/chat">
+    <a onClick="fbq('track', 'click');" class="button" href="https://pf.kakao.com/_VHKLu/chat">
 			<div class="text">
 				<p>사전예약하기</p>	</div>
     </a>
@@ -75,7 +98,7 @@
     <div class="wrap2">
       <div class="image2">
     <img src="10.png" alt=""width='100%'>  </div>
-    <a href="https://pf.kakao.com/_VHKLu/chat">
+    <a onClick="fbq('track', 'click');" class="button" href="https://pf.kakao.com/_VHKLu/chat">
       <div class="text2">
         <p>사전예약하기</p>	</div>
     </a>
